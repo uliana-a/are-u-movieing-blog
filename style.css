@@ -10,6 +10,7 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: max-content max-content auto max-content;
     grid-column-gap: 50px;
+    grid-row-gap: 50px;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
