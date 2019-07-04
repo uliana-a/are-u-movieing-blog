@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header  header"
+        "main    aside-first" 
+        "main    aside-second" 
+        "main    ." 
+        "footer  footer"
+        ;
+    grid-template-columns: 3fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    background: #eae7dc;
+} 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      grid-template-areas:
+          "header"
+          "aside-first"
+          "main"
+          "aside-second"
+          "aside"
+          "footer"
+      ;
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+ 

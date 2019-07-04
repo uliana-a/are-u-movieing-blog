@@ -1,0 +1,41 @@
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+        "logo       icons"
+        "logo       ."
+        "copyrights copyrights";
+    justify-content: space-between;
+}
+
+.footer-logo {
+    grid-area: logo;
+    font-size: 1.5em;
+}
+
+.additional-info > * {
+    margin-right: 10px;
+}
+
+.additional-info {
+    display: inline;
+    grid-area: icons;
+    text-align: right;
+}
+
+.additional-info i:hover {
+    color: #e85a4f;
+    cursor: pointer;
+}
+
+h3 i {
+    font-style: normal;
+    color: #e85a4f;
+}
+
+.copyrights {
+    grid-area: copyrights;
+    text-align: center;
+    border-top: 1px solid #d8c3a5;
+    padding-top: 1.2em;
+}
